@@ -7,6 +7,7 @@ import { LayoutProps, PlayerActions, PlayerEvents } from './types'
 
 export const Vimeo: React.FC<LayoutProps> = ({
   videoId,
+  hash,
   onReady,
   onPlay,
   onPlayProgress,
@@ -129,6 +130,7 @@ export const Vimeo: React.FC<LayoutProps> = ({
       source={{
         html: webplayer(
           videoId,
+          hash,
           loop,
           autoPlayValue,
           controls,

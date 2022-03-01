@@ -2,6 +2,7 @@ import { StyleProp, ViewStyle } from 'react-native'
 
 export interface LayoutProps {
   videoId: string
+  hash: string
   loop: boolean
   autoPlay: boolean
   controls: boolean
